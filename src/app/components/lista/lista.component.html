@@ -1,0 +1,16 @@
+<p>Notas</p>
+<a href="agregar">Agregar</a>
+<table>
+    <tbody>
+        @for (item of notas; track $index) {
+            <tr>
+                <td>{{item.nombre}}</td>
+                <td>{{item.contenido}}</td>
+                <td>{{item.tags}}</td>
+                <td>
+                    <a href="editar/{{item.id}}">Editar</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
