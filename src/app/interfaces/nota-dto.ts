@@ -1,9 +1,8 @@
 export interface NotaDto {
-    "nombre": string
-    "contenido": string
-    "tags": string
-    "estado": string
-    "fechaInicio": Date | null
-    "fechaFin": Date | null
-    "id": number
+    tags: string
+    valor01: string
+    valor02: string
+    valor03: string
+    valor04: string
+    encodedKey: string
 }

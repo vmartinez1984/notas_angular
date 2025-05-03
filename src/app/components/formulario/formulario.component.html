@@ -1,0 +1,35 @@
+<form [formGroup]="formGroup" (submit)="guardar()">
+  <mat-form-field appearance="outline">
+    <mat-label>Tags</mat-label>
+    <input matInput formControlName="tags" maxlength="32" />
+  </mat-form-field>
+
+  <br/>
+  <mat-form-field appearance="outline">
+    <mat-label>Valor 1</mat-label>
+    <input matInput formControlName="valor1" maxlength="1000" />
+  </mat-form-field>
+
+  <br />
+  <mat-form-field appearance="outline">
+    <mat-label>Valor 2</mat-label>
+    <input matInput formControlName="valor2" maxlength="32" />
+  </mat-form-field>
+
+  <br />
+  <mat-form-field appearance="outline">
+    <mat-label>Valor 3</mat-label>
+    <input matInput formControlName="valor3" maxlength="32" />
+  </mat-form-field>
+
+  <br />
+  <mat-form-field appearance="outline">
+    <mat-label>Valor 4</mat-label>
+    <input matInput formControlName="valor4" maxlength="32" />
+  </mat-form-field>
+
+  <br>
+  <button mat-button type="submit">Guardar</button>
+</form>
+
+<a [routerLink]="['/']">Regresar a la lista</a>

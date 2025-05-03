@@ -8,7 +8,7 @@ import { NotaDto } from '../interfaces/nota-dto';
 })
 export class NotaService {
 
-  baseUrl = "http://localhost:8500/api/";
+  baseUrl = "https://localhost:44322/api/";
   url = this.baseUrl + "Notas/"
   constructor(private httpClient: HttpClient) {
 

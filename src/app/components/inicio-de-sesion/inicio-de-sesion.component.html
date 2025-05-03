@@ -1,0 +1,31 @@
+<div class="container mt-5">
+  <form [formGroup]="formGroup" (submit)="iniciarSesion()">
+    <mat-form-field appearance="outline">
+      <mat-label>Usuario</mat-label>
+      <input matInput formControlName="usuario" maxlength="32" />
+    </mat-form-field>
+
+    <br />
+    <mat-form-field appearance="outline">
+      <mat-label>Contraseña</mat-label>
+      <input
+        matInput
+        formControlName="contraseña"
+        [type]="hide() ? 'password' : 'text'"
+        maxlength="12"
+      />
+      <button
+        mat-icon-button
+        matSuffix
+        (click)="clickEvent($event)"
+        [attr.aria-label]="'Hide password'"
+        [attr.aria-pressed]="hide()"
+      >
+        <mat-icon>{{ hide() ? "visibility_off" : "visibility" }}</mat-icon>
+      </button>
+    </mat-form-field>
+
+    <br />
+    <button mat-button type="submit">Iniciar sesión</button>
+  </form>
+</div>
