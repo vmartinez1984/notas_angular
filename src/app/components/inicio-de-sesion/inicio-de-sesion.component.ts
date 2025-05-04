@@ -60,7 +60,7 @@ export class InicioDeSesionComponent {
       };
       this.servicio.iniciarSesion(inicioDeSesion).subscribe({
         next: (token) => {
-          console.log(token);
+          //console.log(token);
           this.servicio.guardarToken(token);
           this.router.navigate(['/']);
           this._snackBar.open(

@@ -1,4 +1,5 @@
-<form [formGroup]="formGroup" (submit)="guardar()">
+<form [formGroup]="_formGroup" (submit)="guardar()">
+  <br/>
   <mat-form-field appearance="outline">
     <mat-label>Tags</mat-label>
     <input matInput formControlName="tags" maxlength="32" />
@@ -28,8 +29,15 @@
     <input matInput formControlName="valor4" maxlength="32" />
   </mat-form-field>
 
-  <br>
-  <button mat-button type="submit">Guardar</button>
+  <br />
+  @if(_estaCargando){
+  <button mat-fab extended color="primary" type="submit" [disabled]="_estaCargando">
+      <mat-spinner [diameter]="20"></mat-spinner>
+  </button>
+  Un momento ...
+  }@else {
+  <button mat-fab extended color="primary" type="submit">
+      <mat-icon>save</mat-icon> Guardar
+  </button>
+  }
 </form>
-
-<a [routerLink]="['/']">Regresar a la lista</a>

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { NotaService } from '../../services/nota.service';
 import { NotaDto } from '../../interfaces/nota-dto';
 import { MatTableDataSource, MatTableModule } from '@angular/material/table';
@@ -10,6 +10,10 @@ import Swal from 'sweetalert2';
 import { RouterModule } from '@angular/router';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { MatSnackBar } from '@angular/material/snack-bar';
+import { MatDialog } from '@angular/material/dialog';
+import { FormularioComponent } from '../formulario/formulario.component';
+import { EditarComponent } from '../editar/editar.component';
 
 @Component({
   selector: 'app-lista',
@@ -27,6 +31,13 @@ import { MatInputModule } from '@angular/material/input';
   ],
 })
 export class ListaComponent {
+  editar(nota: any) {
+    const dialogRef = this._dialog.open(EditarComponent, { data: nota,  })
+    
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(result)
+    })
+  }
   displayColumns: string[] = [
     'tags',
     'valor01',
@@ -37,7 +48,9 @@ export class ListaComponent {
   ];
   notas: NotaDto[] = [];
   estaCargando = false;
-  dataSource = new MatTableDataSource(this.notas);
+  dataSource = new MatTableDataSource(this.notas)
+  private _snackBar = inject(MatSnackBar)
+  readonly _dialog = inject(MatDialog);
 
   constructor(private servicio: NotaService) {
     this.obtenerNotas();
@@ -70,14 +83,7 @@ export class ListaComponent {
   }
 
   copiarEnPortapapeles(texto: string) {
-    navigator.clipboard.writeText(texto);
-    Swal.fire({
-      position: 'top-end',
-      icon: 'success',
-      title: 'Copiado al portapapeles',
-      showConfirmButton: false,
-      timer: 1000,
-      toast: true,
-    });
+    navigator.clipboard.writeText(texto)
+    this._snackBar.open("Copiado, " + texto, "", { duration: 3000 })
   }
 }

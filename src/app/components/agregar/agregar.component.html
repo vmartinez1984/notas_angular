@@ -1,5 +1,5 @@
 <div class="container mt-5">
   <h1>Agregar nuevo</h1>
   <br/>
-  <app-formulario/>
+  <app-formulario (_notaEventEmitter)="guardar($event)" [_estaCargando]="_estaCargando"/>
 </div>
