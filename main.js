@@ -69692,23 +69692,19 @@ var NotaService = class _NotaService {
 var _c011 = () => ["/", "agregar"];
 function ListaComponent_Conditional_13_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 4);
-    \u0275\u0275element(1, "mat-spinner", 6);
-    \u0275\u0275elementStart(2, "p");
-    \u0275\u0275text(3, "Cargando, un momento...");
-    \u0275\u0275elementEnd()();
+    \u0275\u0275element(0, "mat-spinner");
   }
 }
-function ListaComponent_Conditional_14_th_2_Template(rf, ctx) {
+function ListaComponent_th_16_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "th", 17);
+    \u0275\u0275elementStart(0, "th", 15);
     \u0275\u0275text(1, "tags");
     \u0275\u0275elementEnd();
   }
 }
-function ListaComponent_Conditional_14_td_3_Template(rf, ctx) {
+function ListaComponent_td_17_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "td", 18);
+    \u0275\u0275elementStart(0, "td", 16);
     \u0275\u0275text(1);
     \u0275\u0275elementEnd();
   }
@@ -69718,14 +69714,14 @@ function ListaComponent_Conditional_14_td_3_Template(rf, ctx) {
     \u0275\u0275textInterpolate(element_r2.tags);
   }
 }
-function ListaComponent_Conditional_14_th_5_Template(rf, ctx) {
+function ListaComponent_th_19_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "th", 17);
+    \u0275\u0275elementStart(0, "th", 15);
     \u0275\u0275text(1, "Valor 01");
     \u0275\u0275elementEnd();
   }
 }
-function ListaComponent_Conditional_14_td_6_Conditional_1_Template(rf, ctx) {
+function ListaComponent_td_20_Conditional_1_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275text(0);
   }
@@ -69734,7 +69730,7 @@ function ListaComponent_Conditional_14_td_6_Conditional_1_Template(rf, ctx) {
     \u0275\u0275textInterpolate1(" ", element_r4.valor01.substring(8, 25), "... ");
   }
 }
-function ListaComponent_Conditional_14_td_6_Conditional_2_Template(rf, ctx) {
+function ListaComponent_td_20_Conditional_2_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275text(0);
   }
@@ -69743,15 +69739,15 @@ function ListaComponent_Conditional_14_td_6_Conditional_2_Template(rf, ctx) {
     \u0275\u0275textInterpolate1(" ", element_r4.valor01, " ");
   }
 }
-function ListaComponent_Conditional_14_td_6_Template(rf, ctx) {
+function ListaComponent_td_20_Template(rf, ctx) {
   if (rf & 1) {
     const _r3 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "td", 18);
-    \u0275\u0275template(1, ListaComponent_Conditional_14_td_6_Conditional_1_Template, 1, 1)(2, ListaComponent_Conditional_14_td_6_Conditional_2_Template, 1, 1);
-    \u0275\u0275elementStart(3, "button", 19);
-    \u0275\u0275listener("click", function ListaComponent_Conditional_14_td_6_Template_button_click_3_listener() {
+    \u0275\u0275elementStart(0, "td", 16);
+    \u0275\u0275template(1, ListaComponent_td_20_Conditional_1_Template, 1, 1)(2, ListaComponent_td_20_Conditional_2_Template, 1, 1);
+    \u0275\u0275elementStart(3, "button", 17);
+    \u0275\u0275listener("click", function ListaComponent_td_20_Template_button_click_3_listener() {
       const element_r4 = \u0275\u0275restoreView(_r3).$implicit;
-      const ctx_r4 = \u0275\u0275nextContext(2);
+      const ctx_r4 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r4.copiarEnPortapapeles(element_r4.valor01));
     });
     \u0275\u0275elementStart(4, "mat-icon");
@@ -69764,22 +69760,22 @@ function ListaComponent_Conditional_14_td_6_Template(rf, ctx) {
     \u0275\u0275conditional(element_r4.valor03.length > 10 ? 1 : 2);
   }
 }
-function ListaComponent_Conditional_14_th_8_Template(rf, ctx) {
+function ListaComponent_th_22_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "th", 17);
+    \u0275\u0275elementStart(0, "th", 15);
     \u0275\u0275text(1, "Valor 02");
     \u0275\u0275elementEnd();
   }
 }
-function ListaComponent_Conditional_14_td_9_Template(rf, ctx) {
+function ListaComponent_td_23_Template(rf, ctx) {
   if (rf & 1) {
     const _r6 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "td", 18);
+    \u0275\u0275elementStart(0, "td", 16);
     \u0275\u0275text(1);
-    \u0275\u0275elementStart(2, "button", 19);
-    \u0275\u0275listener("click", function ListaComponent_Conditional_14_td_9_Template_button_click_2_listener() {
+    \u0275\u0275elementStart(2, "button", 17);
+    \u0275\u0275listener("click", function ListaComponent_td_23_Template_button_click_2_listener() {
       const element_r7 = \u0275\u0275restoreView(_r6).$implicit;
-      const ctx_r4 = \u0275\u0275nextContext(2);
+      const ctx_r4 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r4.copiarEnPortapapeles(element_r7.valor02));
     });
     \u0275\u0275elementStart(3, "mat-icon");
@@ -69792,68 +69788,79 @@ function ListaComponent_Conditional_14_td_9_Template(rf, ctx) {
     \u0275\u0275textInterpolate1(" ", element_r7.valor02.substring(0, 10), " ");
   }
 }
-function ListaComponent_Conditional_14_th_11_Template(rf, ctx) {
+function ListaComponent_th_25_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "th", 17);
+    \u0275\u0275elementStart(0, "th", 15);
     \u0275\u0275text(1, "Valor 03");
     \u0275\u0275elementEnd();
   }
 }
-function ListaComponent_Conditional_14_td_12_Conditional_1_Template(rf, ctx) {
+function ListaComponent_td_26_Conditional_1_Conditional_0_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275text(0);
   }
   if (rf & 2) {
-    const element_r9 = \u0275\u0275nextContext().$implicit;
+    const element_r9 = \u0275\u0275nextContext(2).$implicit;
     \u0275\u0275textInterpolate1(" ", element_r9.valor03.substring(0, 10), "... ");
   }
 }
-function ListaComponent_Conditional_14_td_12_Conditional_2_Template(rf, ctx) {
+function ListaComponent_td_26_Conditional_1_Conditional_1_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275text(0);
   }
   if (rf & 2) {
-    const element_r9 = \u0275\u0275nextContext().$implicit;
+    const element_r9 = \u0275\u0275nextContext(2).$implicit;
     \u0275\u0275textInterpolate1(" ", element_r9.valor03, " ");
   }
 }
-function ListaComponent_Conditional_14_td_12_Template(rf, ctx) {
+function ListaComponent_td_26_Conditional_1_Template(rf, ctx) {
   if (rf & 1) {
     const _r8 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "td", 18);
-    \u0275\u0275template(1, ListaComponent_Conditional_14_td_12_Conditional_1_Template, 1, 1)(2, ListaComponent_Conditional_14_td_12_Conditional_2_Template, 1, 1);
-    \u0275\u0275elementStart(3, "button", 19);
-    \u0275\u0275listener("click", function ListaComponent_Conditional_14_td_12_Template_button_click_3_listener() {
-      const element_r9 = \u0275\u0275restoreView(_r8).$implicit;
-      const ctx_r4 = \u0275\u0275nextContext(2);
+    \u0275\u0275template(0, ListaComponent_td_26_Conditional_1_Conditional_0_Template, 1, 1)(1, ListaComponent_td_26_Conditional_1_Conditional_1_Template, 1, 1);
+    \u0275\u0275elementStart(2, "button", 17);
+    \u0275\u0275listener("click", function ListaComponent_td_26_Conditional_1_Template_button_click_2_listener() {
+      \u0275\u0275restoreView(_r8);
+      const element_r9 = \u0275\u0275nextContext().$implicit;
+      const ctx_r4 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r4.copiarEnPortapapeles(element_r9.valor03));
     });
-    \u0275\u0275elementStart(4, "mat-icon");
-    \u0275\u0275text(5, "content_copy");
-    \u0275\u0275elementEnd()()();
+    \u0275\u0275elementStart(3, "mat-icon");
+    \u0275\u0275text(4, "content_copy");
+    \u0275\u0275elementEnd()();
+  }
+  if (rf & 2) {
+    const element_r9 = \u0275\u0275nextContext().$implicit;
+    \u0275\u0275conditional(element_r9.valor03.length > 10 ? 0 : 1);
+  }
+}
+function ListaComponent_td_26_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementStart(0, "td", 16);
+    \u0275\u0275template(1, ListaComponent_td_26_Conditional_1_Template, 5, 1);
+    \u0275\u0275elementEnd();
   }
   if (rf & 2) {
     const element_r9 = ctx.$implicit;
     \u0275\u0275advance();
-    \u0275\u0275conditional(element_r9.valor03.length > 10 ? 1 : 2);
+    \u0275\u0275conditional(element_r9.valor03 != "" && element_r9.valor03 != void 0 ? 1 : -1);
   }
 }
-function ListaComponent_Conditional_14_th_14_Template(rf, ctx) {
+function ListaComponent_th_28_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "th", 17);
+    \u0275\u0275elementStart(0, "th", 15);
     \u0275\u0275text(1, "Valor 04");
     \u0275\u0275elementEnd();
   }
 }
-function ListaComponent_Conditional_14_td_15_Conditional_1_Template(rf, ctx) {
+function ListaComponent_td_29_Conditional_1_Template(rf, ctx) {
   if (rf & 1) {
     const _r10 = \u0275\u0275getCurrentView();
     \u0275\u0275text(0);
-    \u0275\u0275elementStart(1, "button", 19);
-    \u0275\u0275listener("click", function ListaComponent_Conditional_14_td_15_Conditional_1_Template_button_click_1_listener() {
+    \u0275\u0275elementStart(1, "button", 17);
+    \u0275\u0275listener("click", function ListaComponent_td_29_Conditional_1_Template_button_click_1_listener() {
       \u0275\u0275restoreView(_r10);
       const element_r11 = \u0275\u0275nextContext().$implicit;
-      const ctx_r4 = \u0275\u0275nextContext(2);
+      const ctx_r4 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r4.copiarEnPortapapeles(element_r11.valor04));
     });
     \u0275\u0275elementStart(2, "mat-icon");
@@ -69865,10 +69872,10 @@ function ListaComponent_Conditional_14_td_15_Conditional_1_Template(rf, ctx) {
     \u0275\u0275textInterpolate1(" ", element_r11.valor04, " ");
   }
 }
-function ListaComponent_Conditional_14_td_15_Template(rf, ctx) {
+function ListaComponent_td_29_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "td", 18);
-    \u0275\u0275template(1, ListaComponent_Conditional_14_td_15_Conditional_1_Template, 4, 1);
+    \u0275\u0275elementStart(0, "td", 16);
+    \u0275\u0275template(1, ListaComponent_td_29_Conditional_1_Template, 4, 1);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
@@ -69877,23 +69884,23 @@ function ListaComponent_Conditional_14_td_15_Template(rf, ctx) {
     \u0275\u0275conditional(element_r11.valor04 != "" && element_r11.valor04 != void 0 ? 1 : -1);
   }
 }
-function ListaComponent_Conditional_14_th_17_Template(rf, ctx) {
+function ListaComponent_th_31_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "th", 17);
+    \u0275\u0275elementStart(0, "th", 15);
     \u0275\u0275text(1, "Acciones");
     \u0275\u0275elementEnd();
   }
 }
-function ListaComponent_Conditional_14_td_18_Template(rf, ctx) {
+function ListaComponent_td_32_Template(rf, ctx) {
   if (rf & 1) {
     const _r12 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "td", 18)(1, "a", 20)(2, "mat-icon");
+    \u0275\u0275elementStart(0, "td", 16)(1, "a", 18)(2, "mat-icon");
     \u0275\u0275text(3, "edit_note");
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(4, "button", 19);
-    \u0275\u0275listener("click", function ListaComponent_Conditional_14_td_18_Template_button_click_4_listener() {
+    \u0275\u0275elementStart(4, "button", 17);
+    \u0275\u0275listener("click", function ListaComponent_td_32_Template_button_click_4_listener() {
       const element_r13 = \u0275\u0275restoreView(_r12).$implicit;
-      const ctx_r4 = \u0275\u0275nextContext(2);
+      const ctx_r4 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r4.editar(element_r13));
     });
     \u0275\u0275elementStart(5, "mat-icon");
@@ -69906,47 +69913,14 @@ function ListaComponent_Conditional_14_td_18_Template(rf, ctx) {
     \u0275\u0275propertyInterpolate1("href", "editar/", element_r13.id, "", \u0275\u0275sanitizeUrl);
   }
 }
-function ListaComponent_Conditional_14_tr_19_Template(rf, ctx) {
+function ListaComponent_tr_33_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275element(0, "tr", 21);
+    \u0275\u0275element(0, "tr", 19);
   }
 }
-function ListaComponent_Conditional_14_tr_20_Template(rf, ctx) {
+function ListaComponent_tr_34_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275element(0, "tr", 22);
-  }
-}
-function ListaComponent_Conditional_14_Template(rf, ctx) {
-  if (rf & 1) {
-    \u0275\u0275elementStart(0, "table", 5);
-    \u0275\u0275elementContainerStart(1, 7);
-    \u0275\u0275template(2, ListaComponent_Conditional_14_th_2_Template, 2, 0, "th", 8)(3, ListaComponent_Conditional_14_td_3_Template, 2, 1, "td", 9);
-    \u0275\u0275elementContainerEnd();
-    \u0275\u0275elementContainerStart(4, 10);
-    \u0275\u0275template(5, ListaComponent_Conditional_14_th_5_Template, 2, 0, "th", 8)(6, ListaComponent_Conditional_14_td_6_Template, 6, 1, "td", 9);
-    \u0275\u0275elementContainerEnd();
-    \u0275\u0275elementContainerStart(7, 11);
-    \u0275\u0275template(8, ListaComponent_Conditional_14_th_8_Template, 2, 0, "th", 8)(9, ListaComponent_Conditional_14_td_9_Template, 5, 1, "td", 9);
-    \u0275\u0275elementContainerEnd();
-    \u0275\u0275elementContainerStart(10, 12);
-    \u0275\u0275template(11, ListaComponent_Conditional_14_th_11_Template, 2, 0, "th", 8)(12, ListaComponent_Conditional_14_td_12_Template, 6, 1, "td", 9);
-    \u0275\u0275elementContainerEnd();
-    \u0275\u0275elementContainerStart(13, 13);
-    \u0275\u0275template(14, ListaComponent_Conditional_14_th_14_Template, 2, 0, "th", 8)(15, ListaComponent_Conditional_14_td_15_Template, 2, 1, "td", 9);
-    \u0275\u0275elementContainerEnd();
-    \u0275\u0275elementContainerStart(16, 14);
-    \u0275\u0275template(17, ListaComponent_Conditional_14_th_17_Template, 2, 0, "th", 8)(18, ListaComponent_Conditional_14_td_18_Template, 7, 2, "td", 9);
-    \u0275\u0275elementContainerEnd();
-    \u0275\u0275template(19, ListaComponent_Conditional_14_tr_19_Template, 1, 0, "tr", 15)(20, ListaComponent_Conditional_14_tr_20_Template, 1, 0, "tr", 16);
-    \u0275\u0275elementEnd();
-  }
-  if (rf & 2) {
-    const ctx_r4 = \u0275\u0275nextContext();
-    \u0275\u0275property("dataSource", ctx_r4.notas);
-    \u0275\u0275advance(19);
-    \u0275\u0275property("matHeaderRowDef", ctx_r4.displayColumns);
-    \u0275\u0275advance();
-    \u0275\u0275property("matRowDefColumns", ctx_r4.displayColumns);
+    \u0275\u0275element(0, "tr", 20);
   }
 }
 var ListaComponent = class _ListaComponent {
@@ -70005,7 +69979,7 @@ var ListaComponent = class _ListaComponent {
   static \u0275fac = function ListaComponent_Factory(__ngFactoryType__) {
     return new (__ngFactoryType__ || _ListaComponent)(\u0275\u0275directiveInject(NotaService));
   };
-  static \u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _ListaComponent, selectors: [["app-lista"]], decls: 15, vars: 3, consts: [["input", ""], [1, "container", "mt-5"], ["mat-button", "", "matTooltip", "Agregar nueva nota", "aria-label", "Button that displays a tooltip when focused or hovered over", 3, "routerLink"], ["matInput", "", "placeholder", "Ex. ium", 3, "keyup"], [2, "text-align", "center"], ["mat-table", "", 3, "dataSource"], [2, "margin", "0 auto", "width", "25"], ["matColumnDef", "tags"], ["mat-header-cell", "", 4, "matHeaderCellDef"], ["mat-cell", "", 4, "matCellDef"], ["matColumnDef", "valor01"], ["matColumnDef", "valor02"], ["matColumnDef", "valor03"], ["matColumnDef", "valor04"], ["matColumnDef", "acciones"], ["mat-header-row", "", 4, "matHeaderRowDef"], ["mat-row", "", 4, "matRowDef", "matRowDefColumns"], ["mat-header-cell", ""], ["mat-cell", ""], ["mat-button", "", 3, "click"], ["mat-button", "", 3, "href"], ["mat-header-row", ""], ["mat-row", ""]], template: function ListaComponent_Template(rf, ctx) {
+  static \u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _ListaComponent, selectors: [["app-lista"]], decls: 35, vars: 6, consts: [["input", ""], [1, "container-fluid", "mt-5"], ["mat-button", "", "matTooltip", "Agregar nueva nota", "aria-label", "Button that displays a tooltip when focused or hovered over", 3, "routerLink"], ["matInput", "", "placeholder", "", 3, "keyup"], ["mat-table", "", 3, "dataSource"], ["matColumnDef", "tags"], ["mat-header-cell", "", 4, "matHeaderCellDef"], ["mat-cell", "", 4, "matCellDef"], ["matColumnDef", "valor01"], ["matColumnDef", "valor02"], ["matColumnDef", "valor03"], ["matColumnDef", "valor04"], ["matColumnDef", "acciones"], ["mat-header-row", "", 4, "matHeaderRowDef"], ["mat-row", "", 4, "matRowDef", "matRowDefColumns"], ["mat-header-cell", ""], ["mat-cell", ""], ["mat-button", "", 3, "click"], ["mat-button", "", 3, "href"], ["mat-header-row", ""], ["mat-row", ""]], template: function ListaComponent_Template(rf, ctx) {
     if (rf & 1) {
       const _r1 = \u0275\u0275getCurrentView();
       \u0275\u0275elementStart(0, "div", 1)(1, "h2");
@@ -70026,16 +70000,42 @@ var ListaComponent = class _ListaComponent {
         return \u0275\u0275resetView(ctx.applyFilter($event));
       });
       \u0275\u0275elementEnd()();
-      \u0275\u0275template(13, ListaComponent_Conditional_13_Template, 4, 0, "div", 4)(14, ListaComponent_Conditional_14_Template, 21, 3, "table", 5);
-      \u0275\u0275elementEnd();
+      \u0275\u0275template(13, ListaComponent_Conditional_13_Template, 1, 0, "mat-spinner");
+      \u0275\u0275elementStart(14, "table", 4);
+      \u0275\u0275elementContainerStart(15, 5);
+      \u0275\u0275template(16, ListaComponent_th_16_Template, 2, 0, "th", 6)(17, ListaComponent_td_17_Template, 2, 1, "td", 7);
+      \u0275\u0275elementContainerEnd();
+      \u0275\u0275elementContainerStart(18, 8);
+      \u0275\u0275template(19, ListaComponent_th_19_Template, 2, 0, "th", 6)(20, ListaComponent_td_20_Template, 6, 1, "td", 7);
+      \u0275\u0275elementContainerEnd();
+      \u0275\u0275elementContainerStart(21, 9);
+      \u0275\u0275template(22, ListaComponent_th_22_Template, 2, 0, "th", 6)(23, ListaComponent_td_23_Template, 5, 1, "td", 7);
+      \u0275\u0275elementContainerEnd();
+      \u0275\u0275elementContainerStart(24, 10);
+      \u0275\u0275template(25, ListaComponent_th_25_Template, 2, 0, "th", 6)(26, ListaComponent_td_26_Template, 2, 1, "td", 7);
+      \u0275\u0275elementContainerEnd();
+      \u0275\u0275elementContainerStart(27, 11);
+      \u0275\u0275template(28, ListaComponent_th_28_Template, 2, 0, "th", 6)(29, ListaComponent_td_29_Template, 2, 1, "td", 7);
+      \u0275\u0275elementContainerEnd();
+      \u0275\u0275elementContainerStart(30, 12);
+      \u0275\u0275template(31, ListaComponent_th_31_Template, 2, 0, "th", 6)(32, ListaComponent_td_32_Template, 7, 2, "td", 7);
+      \u0275\u0275elementContainerEnd();
+      \u0275\u0275template(33, ListaComponent_tr_33_Template, 1, 0, "tr", 13)(34, ListaComponent_tr_34_Template, 1, 0, "tr", 14);
+      \u0275\u0275elementEnd()();
     }
     if (rf & 2) {
       \u0275\u0275advance(3);
-      \u0275\u0275property("routerLink", \u0275\u0275pureFunction0(2, _c011));
+      \u0275\u0275property("routerLink", \u0275\u0275pureFunction0(5, _c011));
       \u0275\u0275advance(10);
-      \u0275\u0275conditional(ctx.estaCargando ? 13 : 14);
+      \u0275\u0275conditional(ctx.estaCargando ? 13 : -1);
+      \u0275\u0275advance();
+      \u0275\u0275property("dataSource", ctx.dataSource);
+      \u0275\u0275advance(19);
+      \u0275\u0275property("matHeaderRowDef", ctx.displayColumns);
+      \u0275\u0275advance();
+      \u0275\u0275property("matRowDefColumns", ctx.displayColumns);
     }
-  }, dependencies: [MatTableModule, MatTable, MatHeaderCellDef, MatHeaderRowDef, MatColumnDef, MatCellDef, MatRowDef, MatHeaderCell, MatCell, MatHeaderRow, MatRow, MatButtonModule, MatAnchor, MatButton, MatIconModule, MatIcon, MatProgressSpinnerModule, MatProgressSpinner, MatTooltipModule, MatTooltip, RouterModule, RouterLink, MatFormFieldModule, MatFormField, MatLabel, MatInputModule, MatInput], styles: ["\n\n.mat-mdc-form-field[_ngcontent-%COMP%] {\n  font-size: 14px;\n  width: 100%;\n}\n/*# sourceMappingURL=lista.component.css.map */"] });
+  }, dependencies: [MatTableModule, MatTable, MatHeaderCellDef, MatHeaderRowDef, MatColumnDef, MatCellDef, MatRowDef, MatHeaderCell, MatCell, MatHeaderRow, MatRow, MatButtonModule, MatAnchor, MatButton, MatIconModule, MatIcon, MatProgressSpinnerModule, MatProgressSpinner, MatTooltipModule, MatTooltip, MatInputModule, MatInput, MatFormField, MatLabel, RouterModule, RouterLink, MatFormFieldModule], styles: ["\n\n.mat-mdc-form-field[_ngcontent-%COMP%] {\n  font-size: 14px;\n  width: 100%;\n}\nmat-spinner[_ngcontent-%COMP%] {\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n}\n/*# sourceMappingURL=lista.component.css.map */"] });
 };
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(ListaComponent, [{
@@ -70046,10 +70046,11 @@ var ListaComponent = class _ListaComponent {
       MatIconModule,
       MatProgressSpinnerModule,
       MatTooltipModule,
+      MatInputModule,
       RouterModule,
       MatFormFieldModule,
       MatInputModule
-    ], template: `<div class="container mt-5">\r
+    ], template: `<div class="container-fluid mt-5">\r
   <h2>Notas</h2>\r
   <a\r
     mat-button\r
@@ -70065,21 +70066,14 @@ var ListaComponent = class _ListaComponent {
 \r
   <mat-form-field>\r
     <mat-label>Filtro</mat-label>\r
-    <input\r
-      matInput\r
-      (keyup)="applyFilter($event)"\r
-      placeholder="Ex. ium"\r
-      #input\r
-    />\r
+    <input matInput (keyup)="applyFilter($event)" placeholder="" #input />\r
   </mat-form-field>\r
 \r
   @if(estaCargando){\r
-  <div style="text-align: center">\r
-    <mat-spinner style="margin: 0 auto; width: 25"></mat-spinner>\r
-    <p>Cargando, un momento...</p>\r
-  </div>\r
-  }@else {\r
-  <table mat-table [dataSource]="notas">\r
+  <mat-spinner />\r
+  }\r
+\r
+  <table mat-table [dataSource]="dataSource">\r
     <ng-container matColumnDef="tags">\r
       <th mat-header-cell *matHeaderCellDef>tags</th>\r
       <td mat-cell *matCellDef="let element">{{ element.tags }}</td>\r
@@ -70088,18 +70082,6 @@ var ListaComponent = class _ListaComponent {
     <ng-container matColumnDef="valor01">\r
       <th mat-header-cell *matHeaderCellDef>Valor 01</th>\r
       <td mat-cell *matCellDef="let element">\r
-        <!-- @if(element.estado == 'Url'){\r
-                <a href="{{element.contenido}}" target="_blank">\r
-                    <mat-icon>link</mat-icon>\r
-                    {{element.contenido.substring(8,25)}}\r
-                </a>\r
-                }@else{\r
-\r
-                <button mat-button (click)="copiarEnPortapapeles(element.contenido)">\r
-                    <mat-icon>content_copy</mat-icon>\r
-                </button>\r
-                {{element.contenido.substring(0,25)}}\r
-                } -->\r
         @if(element.valor03.length > 10){\r
         {{ element.valor01.substring(8, 25) }}... }@else {\r
         {{ element.valor01 }}\r
@@ -70123,14 +70105,15 @@ var ListaComponent = class _ListaComponent {
     <ng-container matColumnDef="valor03">\r
       <th mat-header-cell *matHeaderCellDef>Valor 03</th>\r
       <td mat-cell *matCellDef="let element">\r
+        @if(element.valor03 != "" && element.valor03 != undefined){\r
         @if(element.valor03.length > 10){\r
         {{ element.valor03.substring(0, 10) }}... }@else {\r
         {{ element.valor03 }}\r
         }\r
-\r
         <button mat-button (click)="copiarEnPortapapeles(element.valor03)">\r
           <mat-icon>content_copy</mat-icon>\r
         </button>\r
+        }\r
       </td>\r
     </ng-container>\r
 \r
@@ -70173,9 +70156,8 @@ var ListaComponent = class _ListaComponent {
                 }\r
             </tbody> -->\r
   </table>\r
-  }\r
 </div>\r
-`, styles: ["/* src/app/components/lista/lista.component.css */\n.mat-mdc-form-field {\n  font-size: 14px;\n  width: 100%;\n}\n/*# sourceMappingURL=lista.component.css.map */\n"] }]
+`, styles: ["/* src/app/components/lista/lista.component.css */\n.mat-mdc-form-field {\n  font-size: 14px;\n  width: 100%;\n}\nmat-spinner {\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n}\n/*# sourceMappingURL=lista.component.css.map */\n"] }]
   }], () => [{ type: NotaService }], null);
 })();
 (() => {
