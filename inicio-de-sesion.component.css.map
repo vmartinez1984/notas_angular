@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/components/inicio-de-sesion/inicio-de-sesion.component.css"],
+  "sourcesContent": ["mat-form-field {\r\n  width: 100%;\r\n  max-width: 500px;\r\n}\r\n"],
+  "mappings": ";AAAA;AACE,SAAO;AACP,aAAW;AACb;",
+  "names": []
+}
