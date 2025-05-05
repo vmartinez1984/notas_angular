@@ -12,7 +12,6 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { MatDialog } from '@angular/material/dialog';
-import { FormularioComponent } from '../formulario/formulario.component';
 import { EditarComponent } from '../editar/editar.component';
 
 @Component({
@@ -25,6 +24,7 @@ import { EditarComponent } from '../editar/editar.component';
     MatIconModule,
     MatProgressSpinnerModule,
     MatTooltipModule,
+    MatInputModule,
     RouterModule,
     MatFormFieldModule,
     MatInputModule,
@@ -33,7 +33,7 @@ import { EditarComponent } from '../editar/editar.component';
 export class ListaComponent {
   editar(nota: any) {
     const dialogRef = this._dialog.open(EditarComponent, { data: nota,  })
-    
+
     dialogRef.afterClosed().subscribe(result => {
       console.log(result)
     })
@@ -59,6 +59,8 @@ export class ListaComponent {
   applyFilter(event: Event) {
     const filterValue = (event.target as HTMLInputElement).value;
     this.dataSource.filter = filterValue.trim().toLowerCase();
+    //console.log(this.dataSource.filter)
+    //console.log(this.dataSource.filteredData);
   }
 
   obtenerNotas() {

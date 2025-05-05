@@ -1,1 +1,6 @@
-<router-outlet />
+@if(estaIniciadaLaSesion()){
+    <mat-toolbar color="primary">
+      <button mat-button (click)="cerrarSesion()">Cerrar sesión</button>
+    </mat-toolbar>
+}
+  <router-outlet />

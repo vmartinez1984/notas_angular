@@ -71,3 +71,19 @@ For more information on using the Angular CLI, including detailed command refere
 
 
 https://blog.angular-university.io/angular-material-dialog/
+
+```bash
+ng build --base-href "/nombre-del-repo/"
+
+ng build --base-href "/notas_angular/"
+```
+
+```bash
+npm install -g angular-cli-ghpages
+```
+
+```bash
+npx angular-cli-ghpages --dir=dist/nombre-del-proyecto
+
+npx angular-cli-ghpages --dir=dist/notas_angular/browser
+```
